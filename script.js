@@ -1,19 +1,15 @@
-// Hente et element = Hente
-const hamburgerImg = document.querySelector("#hamburgerImg");
+const submitButton = document.querySelector("#gernabuttog");
+console.log(gernabuttog);
 
-// Alternativ 1:
-// Ha en funksjon = Modifiserer
-// Laget en funksjon som henter navList-elementet og bytter klassenavn for synlig/usynlig
-function hamburgerToggle() {
-  console.log("Hi from hamburgerToggle");
-
-  const navListElement = document.querySelector(".navList"); // Bevist brukt klasse for kun et element med det klassenavnet
-  console.log(navListElement);
-
-  // Metode 1: Skrive CSS i JS som blir inline-CSS
-  navListElement.style.display = "flex";
-  navListElement.style.flexDirection = "column";
+function gatherData() {
+  console.log("Button clicked")
 }
 
-// Aktiverer en funksjon = Sender
-hamburgerImg.addEventListener("click", hamburgerToggle);
+const germa = document.querySelector("#germa");
+const germaValue = germa.value;
+console.log(germa);
+
+gernabuttog.addEventListener("click", gatherData);
+
+const jeremiah = document.querySelector("#jeremiah");
+jeremiah.textContent = germa;
